@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding-top: 0;
+}
+
+body::after {
+  content: "Nethmina";
+  position: fixed;
+  bottom: -9999px;
+  opacity: 0;
+}
+
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  transform: scaleX(-1);        
+}
+
+.container {
+  width: 90%;
+  max-width: 400px;
+  padding: 50px 30px;
+  border-radius: 20px;
+  text-align: center;
+  color: #fff;
+  backdrop-filter: blur(12px);
+  animation: fadeIn 1s ease-out;
+
+  
+  box-shadow:
+    0 0 15px rgba(8, 8, 8, 0.4),
+    0 0 30px rgba(0, 0, 0, 0.2),
+    0 8px 32px rgba(0, 0, 0, 0.35);
+}
+
+.container h1 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.container p {
+  margin-bottom: 20px;
+  color: #f3f3f3;
+}
+
+.input-container {
+  display: flex;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 15px;
+  border: none;
+  background: transparent;
+  color: #000;
+  font-weight: bold;
+}
+
+.input-container input::placeholder {
+  color: #000;
+}
+
+.input-container input:focus {
+  outline: none;
+}
+
+.input-container button {
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  background: linear-gradient(223deg, #f10195, #04baf1);
+  color: #fff;
+  transition: all 0.4s ease;
+}
+
+.input-container button:hover {
+  background: #0ff;
+  color: #000;
+  box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+}
+
+
+.copyright {
+  position: fixed;
+  bottom: 20px;
+  width: 85%;
+  text-align: center;
+  font-size: 13px;
+  font-family: 'Poppins', sans-serif;
+  color: #0ff;
+  text-shadow: 0 0 8px #0ff, 0 0 15px #0ff;
+  z-index: 2;
+}
+
+.fake-layer-x9a { display: none; }
+.glitch-protection-77 { opacity: 0.9999; }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 500px) {
+  body {
+    padding-top: 20px;
+  }
+
+  .input-container {
+    flex-direction: column;
+  }
+
+  .input-container input,
+  .input-container button {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .input-container button {
+    border-top: 1px solid #ccc;
+  }
+}
