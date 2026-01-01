@@ -23,3 +23,12 @@ A modern, responsive HTML & CSS website with a glassmorphism UI design and anima
 Copyright © NETHMINA NAWANJANA.
 
 Unauthorized copying, reproduction, modification, distribution, or use of this code is strictly prohibited without prior written permission from the author.
+
+## 🙏 Credit Requirement
+
+If you use this project or any part of this code, you **must give credit** to the original author:
+
+**Nethmina Nawanjana**
+
+Removing or hiding this credit is not permitted.
+
