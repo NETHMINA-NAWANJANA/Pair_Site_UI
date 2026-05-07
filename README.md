@@ -29,7 +29,7 @@ Unauthorized copying, reproduction, modification, distribution, or use of this c
 
 ## 🙏 Credit Requirement
 
-If you use this project or any part of this code, you **must give credit** to the original author:
+If you use this project or any part of this code, you **must give credit** to the original author:-
 
 **Nethmina Nawanjana**
 
